@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="catalog.css" rel="stylesheet">
+</head>
+<body>
+    <div class="products" >
+    <div class="header">
+        <!-- <input type="search" placeholder="search item" > -->
+       
+        <button class="cartbutton" onclick="  cartpage()">cart items</button>
+    </div>
+    <div class="head">
+        <button>Shirts</button>
+        <button>Kurthas</button>
+        <button>Sports Wear</button>
+        <button>Jeans</button>
+    </div>
+    <div class="main">
+        <div class="shirts">
+            <div class="item">
+                <img src="asserts/images.jpeg">
+                <div class="data">
+                   <p>Round Neck Tea Shirt</p>
+                   <p>Color : White</p>
+                   <p>Price : $25.00</p>
+                   <button onclick=" 
+                   createitem('Round Neck Tea Shirt',1,25.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="asserts/images (1).jpeg">
+                <div class="data">
+                    <p>Round Neck Tea Shirt</p>
+                   <p>Color : Black</p>
+                   <p>Price : $25</p>
+                   <button onclick="
+                   createitem('Black',1,24.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="asserts/images (2).jpeg">
+                <div class="data">
+                    <p>Round Neck Tea Shirt</p>
+                   <p>Color : White</p>
+                   <p>Price : $25</p>
+                   <button onclick="
+                   createitem('round neck',1,25.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="asserts/images (3).jpeg">
+                <div class="data">
+                    <p>Round Neck Tea Shirt</p>
+                   <p>Color : White</p>
+                   <p>Price : $25</p>
+                   <button onclick="
+                   createitem('Round Neck Tea Shirt',1,25.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        
+    </div>
+</div>
+    <div class="cartpage">
+        <button onclick=" productpage() ">product page</button>
+        <h1>Cart Items</h1>
+
+        <div id="cart"></div>
+        <div id="total"></div>
+    </div>
+    
+    <script src="catalog.js"></script>
+</body>
+</html>

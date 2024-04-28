@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="loginpage.css" rel="stylesheet">
+</head>
+<body>
+    <div class="photo" >
+        <div class="main">
+            <div class="fixed">
+                <button class="log" onclick=" login(); ">Login</button>
+                <button class="log" onclick=" register(); ">Register</button>
+            </div>
+            <div class="login">
+                <span  class="type">Username</span>
+                <input id="user1"  type="text">
+                <span    class="type">Password</span>
+                <input  id="pass1" type="password" >    
+                
+                <button onclick=" logining(); " class="but">Login</button>
+                <div class="forgot"><a href="#">Forget Password?</a></div>
+            </div>
+            <div class="register">
+                <span >Username</span>
+                <input id="user" type="text" >
+                <span>Password</span>
+                <input id="pass"  type="password">
+                <span>Conform Password</span>
+                <input id="pass11" type="password">
+                <button class="but" onclick=" registration();">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="loginpage.js"></script>
+</body>
+</html>
+
+
+
