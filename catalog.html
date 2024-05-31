@@ -2,7 +2,227 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wid<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="catalog.css" rel="stylesheet">
+</head>
+<body>
+    <div class="products" >
+    <!-- <div class="header">
+        
+       
+        <button class="cartbutton" onclick="  cartpage()">cart items</button>
+    </div> -->
+    <div class="head">
+        <button onclick="teashirt();">Tea Shirts</button>
+        <button onclick="kurthas();">Kurthas</button>
+        <button onclick="shoes();">Shoes</button>
+        <button onclick="sports();">sports</button>
+        <button  onclick="cartpage();">cart items</button>
+    </div>
+    <div class="main">
+        <div class="shirts">
+            <div class="item">
+                <img src="assets/tea shirts/balckteashirt.jpg">
+                <div class="data">
+                   <p>Round Neck Black Tea Shirt</p>
+                   <p>Color : Black</p>
+                   <p>Price : $24.00</p>
+                   <button onclick=" 
+                   additemcart('Round Neck Black Tea Shirt',1,24.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/tea shirts/grey shirt.jpg">
+                <div class="data">
+                    <p>Round Neck Grey Tea Shirt</p>
+                   <p>Color : Grey</p>
+                   <p>Price : $25</p>
+                   <button onclick="
+                   additemcart('Round Neck Grey Tea Shirt',1,25.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/tea shirts/light white shirt.jpg">
+                <div class="data">
+                    <p>Round Neck Light White Tea Shirt</p>
+                   <p>Color :Light White</p>
+                   <p>Price : $22</p>
+                   <button onclick="
+                   additemcart('Round Neck Light White Tea Shirt',1,22.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/tea shirts/white.jpg">
+                <div class="data">
+                    <p>Round Neck White Tea Shirt</p>
+                   <p>Color : White</p>
+                   <p>Price : $25</p>
+                   <button onclick="
+                   additemcart('Round Neck White Tea Shirt',1,25.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="kurthas">
+            <div class="item">
+                <img src="assets/kurthas/blue.jpg">
+                <div class="data">
+                   <p>Desiner Kurtha </p>
+                   <p>Color : Navy Blue</p>
+                   <p>Price : $32.00</p>
+                   <button onclick=" 
+                   additemcart('Desiner Kurtha',1,32.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/kurthas/brown.jpg">
+                <div class="data">
+                    <p>Wedding kurtha Brown</p>
+                   <p>Color : Brown</p>
+                   <p>Price : $31</p>
+                   <button onclick="
+                   additemcart('Wedding kurtha Brown',1,31.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/kurthas/skyblue.jpg">
+                <div class="data">
+                    <p>Wedding Kurtha Blue</p>
+                   <p>Color : Sky Blue</p>
+                   <p>Price : $30</p>
+                   <button onclick="
+                   additemcart('Wedding Kurtha Blue',1,30.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/kurthas/yellow.png">
+                <div class="data">
+                    <p>Men Perfect Ethenic Style</p>
+                   <p>Color : Yellow</p>
+                   <p>Price : $25</p>
+                   <button onclick="
+                   additemcart('Men Perfect Ethenic Style',1,25.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="shoes">
+            <div class="item">
+                <img src="assets/shoes/classic.jpg">
+                <div class="data">
+                   <p>classic Men Wear</p>
+                   <p>Color : Brown</p>
+                   <p>Price : $20.00</p>
+                   <button onclick=" 
+                   additemcart('classic Men Wear',1,20.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/shoes/formal.jpg">
+                <div class="data">
+                    <p>Formal Men Wear</p>
+                   <p>Color : Black</p>
+                   <p>Price : $21</p>
+                   <button onclick="
+                   additemcart('Formal Men Wear',1,21.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/shoes/hiking.jpg">
+                <div class="data">
+                    <p>Hiking Shoe </p>
+                   <p>Color : Grey</p>
+                   <p>Price : $25</p>
+                   <button onclick="
+                   additemcart('Hiking Shoe',1,25.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/shoes/slip on loafer.jpg">
+                <div class="data">
+                    <p>Slip On Loafer</p>
+                   <p>Color : Brown</p>
+                   <p>Price : $28</p>
+                   <button onclick="
+                   additemcart('Slip On Loafer',1,28.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="sports">
+            <div class="item">
+                <img src="assets/sports/basketball.jpg">
+                <div class="data">
+                   <p>Basket Ball</p>
+                   <p>Color : Brown</p>
+                   <p>Price : $25.00</p>
+                   <button onclick=" 
+                   additemcart('Basket Ball',1,25.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/sports/foot ball.jpg">
+                <div class="data">
+                    <p>Foot Ball</p>
+                   <p>Color : White/Black</p>
+                   <p>Price : $25</p>
+                   <button onclick="
+                   additemcart('Foot Ball',1,24.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/sports/tennis ball.jpg">
+                <div class="data">
+                    <p>Tennis Ball</p>
+                   <p>Color : Yellow</p>
+                   <p>Price : $25</p>
+                   <button onclick="
+                   additemcart('Tennis Ball',1,25.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/sports/volleyball.jpg">
+                <div class="data">
+                    <p>Volley Ball</p>
+                   <p>Color : Blue/Yellow</p>
+                   <p>Price : $24</p>
+                   <button onclick="
+                   additemcart('Volley Ball',1,24.00);
+                   ">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="cartpage">
+        <button onclick=" productpage() ">product page</button>
+        <h1>Cart Items</h1>
+
+        <div id="cart"></div>
+        <div id="total"></div>
+    </div>
+    
+    <script src="catalog.js"></script>
+</body>
+</html>
+th, initial-scale=1.0">
     <title>Document</title>
     <link href="catalog.css" rel="stylesheet">
 </head>
