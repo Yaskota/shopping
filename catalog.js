@@ -1,4 +1,4 @@
-jidocument.querySelector(".shirts").style=`display:grid-block;`
+document.querySelector(".shirts").style=`display:grid-block;`
   document.querySelector(".kurthas").style=`display:none;`
   document.querySelector(".sports").style=`display:none;`
   document.querySelector(".shoes").style=`display:none;`
