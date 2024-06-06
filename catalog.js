@@ -1,4 +1,4 @@
-document.querySelector(".shirts").style=`display:grid-block;`
+jidocument.querySelector(".shirts").style=`display:grid-block;`
   document.querySelector(".kurthas").style=`display:none;`
   document.querySelector(".sports").style=`display:none;`
   document.querySelector(".shoes").style=`display:none;`
@@ -125,6 +125,7 @@ function createitem(itemname,quantity,price)
 
   removebutton.addEventListener('click' , () => {
       itemdiv.remove();
+        cartitemdata=cartitemdata.filter(item => item.name !== itemname);
       totalprice=totalprice-quantity*price;
       document.getElementById('total').innerHTML=`Total Price : ${totalprice}`
   });
