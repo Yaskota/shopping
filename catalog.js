@@ -123,11 +123,12 @@ function createitem(itemname,quantity,price)
 
   removebutton.textContent='Remove';
 
-  removebutton.addEventListener('click' , () => {
-      itemdiv.remove();
+          totalprice=totalprice-(price)*(quantity);
+        itemdiv.remove();
         cartitemdata=cartitemdata.filter(item => item.name !== itemname);
-      totalprice=totalprice-quantity*price;
-      document.getElementById('total').innerHTML=`Total Price : ${totalprice}`
+
+
+        document.getElementById('total').innerHTML=`Total Price :  ${totalprice}`;
   });
 
   itemdiv.appendChild(removebutton);
