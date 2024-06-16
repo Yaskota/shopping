@@ -123,13 +123,14 @@ function createitem(itemname,quantity,price)
 
   removebutton.textContent='Remove';
 
-          totalprice=totalprice-(price)*(quantity);
-        itemdiv.remove();
-        cartitemdata=cartitemdata.filter(item => item.name !== itemname);
-
-
-        document.getElementById('total').innerHTML=`Total Price :  ${totalprice}`;
-  });
+  removebutton.addEventListener('click', () => {
+    totalprice = totalprice - (price * quantity);
+    itemdiv.remove();
+    document.getElementById('total').innerHTML = `Total Price : ${totalprice}`;
+    console.log("button")
+    cartitemdata = cartitemdata.filter(item => item.name !== itemname);
+    console.log("button clicked");
+  })
 
   itemdiv.appendChild(removebutton);
 
@@ -140,7 +141,7 @@ function createitem(itemname,quantity,price)
 
  }
 
-   const cartitemdata=[];
+   let cartitemdata=[];
 
    function additemcart(itemname,itemquantity,itemprice)
    {
@@ -159,5 +160,4 @@ function createitem(itemname,quantity,price)
 
  
  
-
 
